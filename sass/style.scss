@@ -247,6 +247,22 @@
     margin: 0 auto;
     &__images {
         display: flex;
+        @media (max-width: 950px){
+            flex-wrap: wrap-reverse;
+        }
+    }
+    &__col1{
+        @media (max-width: 950px){
+            display: none;
+        }
+    }
+    &__col2{
+        @media (max-width: 950px){
+            display: none;
+        }
+    }
+    &__col3{
+        
     }
     &__logo {
         display: flex;
@@ -337,16 +353,22 @@
         &>img{
             
         }
+        @media (max-width: 950px){
+            min-width: none;
+            width: 100%;
+        }
     }
     &_7{
         min-width: 267px;
         min-height: 267px;
         background-image: url(../img/shop/shop_7.png);
+        flex: 1 1 auto;
     }
     &_8{
         min-width: 267px;
         min-height: 267px;
         background-image: url(../img/shop/shop_8.png);
+        flex: 1 1 auto;
     }
 }
 .shop-block-vertical {
@@ -357,6 +379,25 @@
 .shop-block-horizontal {
     flex: 1 1 auto;
     display: flex;
+}
+.shop {
+    margin: 0 auto;
+    &__images {
+        display: flex;
+    }
+    &__col1{
+        @media (max-width: 950px){
+            display: none;
+        }
+    }
+    &__col2{
+        @media (max-width: 950px){
+            display: none;
+        }
+    }
+    &__col3{
+        min-width: none;
+    }
 }
 .mailform {
     background: #fff;
@@ -407,18 +448,27 @@
 .footer{
     background-color: #f7f7f7;
     padding: 100px 100px;
+    @media (max-width: 950px){
+        padding: 20px 20px;
+    }
     
     &__flexbox{
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (max-width: 950px){
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
     }
     &__text {
         flex: 1 1 auto;
         display: flex;
         flex-direction: column;
         width: 10%;
-
+        @media (max-width: 950px){
+            width: 100%;
+        }
         font-family: Lato;
         font-size: 16px;
         line-height: 17px;

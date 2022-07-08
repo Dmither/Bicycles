@@ -363,6 +363,22 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 950px) {
+  .shop__images {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+}
+@media (max-width: 950px) {
+  .shop__col1 {
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  .shop__col2 {
+    display: none;
+  }
+}
 .shop__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -480,15 +496,27 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 950px) {
+  .shop-block_6 {
+    min-width: none;
+    width: 100%;
+  }
+}
 .shop-block_7 {
   min-width: 267px;
   min-height: 267px;
   background-image: url(../img/shop/shop_7.png);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 .shop-block_8 {
   min-width: 267px;
   min-height: 267px;
   background-image: url(../img/shop/shop_8.png);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .shop-block-vertical {
@@ -511,6 +539,28 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.shop {
+  margin: 0 auto;
+}
+.shop__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 950px) {
+  .shop__col1 {
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  .shop__col2 {
+    display: none;
+  }
+}
+.shop__col3 {
+  min-width: none;
 }
 
 .mailform {
@@ -576,6 +626,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f7f7f7;
   padding: 100px 100px;
 }
+@media (max-width: 950px) {
+  .footer {
+    padding: 20px 20px;
+  }
+}
 .footer__flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -586,6 +641,16 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 950px) {
+  .footer__flexbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .footer__text {
   -webkit-box-flex: 1;
@@ -604,6 +669,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 17px;
   font-weight: 700;
   color: #848789;
+}
+@media (max-width: 950px) {
+  .footer__text {
+    width: 100%;
+  }
 }
 .footer__text > p:nth-child(2), .footer__text > p:nth-child(3) {
   font-size: 13.9px;
